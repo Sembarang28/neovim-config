@@ -8,9 +8,9 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
-	  -- or                            , branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
+      'nvim-telescope/telescope.nvim', tag = '0.1.5',
+      -- or                            , branch = '0.1.x',
+      requires = { {'nvim-lua/plenary.nvim'} }
   }
 
   use({
@@ -20,8 +20,6 @@ return require('packer').startup(function(use)
 		  vim.cmd('colorscheme rose-pine')
 	  end
   })
-
-  use 'folke/tokyonight.nvim'
 
   use({
       "folke/trouble.nvim",
@@ -42,8 +40,6 @@ return require('packer').startup(function(use)
 				ts_update()
 			end,}
   use("nvim-treesitter/playground")
-  use("theprimeagen/harpoon")
-  use("theprimeagen/refactoring.nvim")
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
   use("nvim-treesitter/nvim-treesitter-context");
